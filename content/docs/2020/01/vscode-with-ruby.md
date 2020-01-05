@@ -1,6 +1,9 @@
 ---
 title: VSCodeでのRuby開発
+date: 2020-01-02 00:00:00
 ---
+
+# VSCodeでのRuby開発
 
 VSCodeでRubyの開発をするための環境を整えたいと思います
 
