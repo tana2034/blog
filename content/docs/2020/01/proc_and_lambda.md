@@ -22,6 +22,8 @@ p2 = proc { |x, y| x + y }
 p1.call(1, 2)
 p2.call(3, 4)
 
+p1.class
+# => Proc < Object
 ```
 
 ## lambdaとは
@@ -29,13 +31,15 @@ p2.call(3, 4)
 同じようにProc型のオブジェクト。
 
 ```Ruby
-
 l1 = lambda { |x, y| x + y}
 # こういう書き方もできる
 l2 = ->(x, y) {x + y}
 
 l1.call(1, 2)
 l2.call(3, 4)
+
+l1.class
+# => Proc < Object
 ```
 
 ## Procとlambdaの違いとは
@@ -58,19 +62,33 @@ p.call(1, 2, 3)
 p = lambda { |x, y| print x, y}
 p.call(1)
 p.call(1,2,3)
-# どちらもダメ
+# どちらもだめ
+# ArgumentError: wrong number of arguments (given 3, expected 2)
 ```
 
 ### 2. return, break時の挙動が違う
 
 #### Procではreturn, breakはブロック同様、字句的に囲われている処理が終了する
 
+```Ruby
+def test_proc
+    p = Proc.new { puts "doing"; return }
+    puts "start"
+    p.call
+    puts "end"
+end
+
+test_proc
+# => start
+# => doing
+# endは出力されない
+```
+
 #### lambdaではreturnするとlambda自身から戻る
 
 ```Ruby
-p = lambda { puts "doing"; return }
-
 def test_lambda
+    p = lambda { puts "doing"; return }
     puts "start"
     p.call
     puts "end"
@@ -80,7 +98,7 @@ test_lambda
 # => "start"
 # => "doing"
 # => "end"
-
+# ちゃんとendまで出力される！
 ```
 
 ## 結局どちらを使うのが良いのか
