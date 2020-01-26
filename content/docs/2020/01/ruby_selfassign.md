@@ -84,12 +84,14 @@ x **= 2
 x, y = nil, 3
 x &&= y
 # xはnilになる
+y &&= x
+# yはnilになる
 a, b = 2, 5
 a &&= b
 # aは5になる
 ```
 
-`x &&= y` は `x && y`がtrueならyの値が入って、falseならxの値は変わらないようだ
+`x &&= y` は `x && y`がtrueならyの値が入って、falseならnilが入るようだ
 
 ### x &= y
 
