@@ -50,7 +50,29 @@ cubed.call(4)
 
 [こちら](https://mickey24.hatenablog.com/entry/20100906/1283769623)でやっていたのが参考になった
 
-## メリット/デメリットはなんなのか
+## Railsにおけるメモ化
+
+### ActiveSupport::Memoizable
+
+- こちらは現在は[非推奨のモジュール](https://apidock.com/rails/ActiveSupport/Memoizable)になっており、代わりに `@var ||= pattern instead...` のような書き方を推奨している
+- モジュールとしてどうしても使用したい場合、[おすすめされている](https://apidock.com/rails/ActiveSupport/Memoizable/memoize#1317-this-has-been-deprecated-replace-with-Memoist)のは、[memoist](https://github.com/matthewrudy/memoist)
+
+```Ruby
+# memoistを使用した実装例
+require 'memoist'
+class Person
+  extend Memoist
+
+  def social_security
+    puts "execute!"
+    decrypt_social_security
+  end
+  memoize :social_security
+end
+```
+こんな感じで使える
+
+## メモ化のメリット/デメリットはなんなのか
 
 ### メリット
 
