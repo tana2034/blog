@@ -68,7 +68,7 @@ func split(sum int) (x, y int) {
 - Variables
 - Variables with initializers
 - Short variables declarations
-
+`var`を使う代わりに`:=`で暗黙的な型宣言ができる
 ```go
 var c, python, java = true, false, "no!"
 ```
@@ -156,9 +156,14 @@ var a [10]string
 a[0] = "aaa" 
 ```
 - Slices
-  
+arrayとの違いが当初わからなかったけど、サイズを指定しなかったらそれはSliceになるみたい。
 ```go
-a[1:4]
+// これは配列
+a := [3]int{1, 2, 3}
+// これはスライス
+b := []int{1, 2, 3}
+// これもスライスになる
+c := a[1:2]
 ```
 - Slices are like references to arrays 
 - Slice literals
@@ -272,7 +277,13 @@ func (v *Vertex) Scale(f float64) {
 - Choosing a value or pointer receiver
 ポインタレシーバを使う理由。
 - Interfaces
-インターフェース型がある
+`Interface(インタフェース)型は、メソッドのシグニチャの集まりで定義`
+```go
+type Abser interface {
+    // メソッド
+	Abs() float64
+}
+```
 - Interfaces are implemented implicitly
 ```go
 type I interface {
