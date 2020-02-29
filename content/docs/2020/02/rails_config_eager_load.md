@@ -1,5 +1,5 @@
 ---
-title: "[rails]Railsにおけるeager_load"
+title: "[rails]config.eager_load"
 weight: 1
 # bookFlatSection: false
 # bookToc: true
