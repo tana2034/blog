@@ -98,3 +98,5 @@ b.test_private_receiver(a)
 ```
 
 そういえば、privateメソッドは多く使われてるなーと会社のソースコード見てても思いました。あんまりprotectedの出番はないのかもしれない。
+
+参考）https://docs.ruby-lang.org/ja/2.1.0/doc/spec=2fdef.html#limit
