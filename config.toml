@@ -1,4 +1,8 @@
 baseURL = "https://tana2034-blog.netlify.com/"
-languageCode = "en-us"
+languageCode = "ja"
 title = "tana2034"
 theme = "book"
+
+[params]
+  author = "tana2034"
+  description = "this blog posted by an web application programmer. mainly about programming language Ruby, Go and more."
