@@ -113,3 +113,6 @@ hash_func(**hash_words)
 # => first keyword
 # => second keyword
 ```
+
+## 参考
+https://techracho.bpsinc.jp/hachi8833/2017_04_06/38498
