@@ -3,7 +3,7 @@ title: "[Sidekiq]はじめてのSidekiq"
 date: 2020-03-16T15:32:11+09:00
 ---
 
-# [Sidekiq]はじめてのSideki
+# [Sidekiq]はじめてのSidekiq
 [これ](https://github.com/mperham/sidekiq/wiki/Getting-Started)を参考に学ぶ
 
 ## Sidekiqとは
