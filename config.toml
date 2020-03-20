@@ -5,4 +5,4 @@ theme = "book"
 
 [params]
   author = "tana2034"
-  description = "this blog posted by an web application programmer. mainly about programming language Ruby, Go and more."
+  description = "mainly about programming language Ruby, Go and more."
