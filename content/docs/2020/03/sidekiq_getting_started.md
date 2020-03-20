@@ -1,10 +1,9 @@
 ---
 title: "[Sidekiq]はじめてのSidekiq"
 date: 2020-03-16T15:32:11+09:00
-draft: true
 ---
 
-# [Sidekiq]はじめてのSideki
+# [Sidekiq]はじめてのSidekiq
 [これ](https://github.com/mperham/sidekiq/wiki/Getting-Started)を参考に学ぶ
 
 ## Sidekiqとは
@@ -33,13 +32,17 @@ rails cとかirbで下記のように呼び出すと実行できる
 ```Ruby
 HardWorker.perform_async('bob', 5)
 ```
+- perform_in(interval, *args) 指定した時間後に実行する
+- perform_at(timestamp, *args)　指定した時間に実行する
 
 ### Basics
 https://github.com/mperham/sidekiq/wiki/The-Basics
 
 #### Client
 
+下記の書き方で、ジョブを追加することができる。
 Workerの処理を実行する書き方として、２つは同じ
+
 ```Ruby
 MyWorker.perform_async(1, 2, 3)
 Sidekiq::Client.push('class' => MyWorker, 'args' => [1, 2, 3])  # Lower-level generic API
@@ -48,7 +51,7 @@ Sidekiq::Client.push('class' => MyWorker, 'args' => [1, 2, 3])  # Lower-level ge
 #### Redis
 https://github.com/mperham/sidekiq/wiki/Using-Redis
 
-Redisにジョブをためておいて、実行させることができる
+ジョブをRedisに蓄積します。
 
 ##### 初期設定
 
@@ -64,7 +67,12 @@ end
 ```
 
 #### Server
-省略
+
+sidekiqサーバがRedisに追加されたジョブを監視して、実行
+
+### Best Practice
+- Workerに渡せる引数は文字列や数値、配列、ハッシュ（Rubyオブジェクトなどは渡せない）
+- Workerには冪等性があるべき
 
 ### Error Handling
 
