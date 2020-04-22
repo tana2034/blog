@@ -1,5 +1,5 @@
 ---
-title: "[Ruby]Bundlerの使い方"
+title: "[Ruby]Bundler周り調査"
 weight: 1
 # bookFlatSection: false
 # bookToc: true
@@ -8,7 +8,7 @@ weight: 1
 # bookComments: true
 ---
 
-# [Ruby]Bundlerとは
+# [Ruby]Bundler周り調査
 
 ## Bundlerとはなんなのか
 
