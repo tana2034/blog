@@ -1,7 +1,6 @@
 ---
 title: "[circleci]ローカルマシンでcircleciのジョブを動かす"
 date: 2020-05-18T08:39:22+09:00
-draft: true
 ---
 
 # [circleci]ローカルマシンでcircleciのジョブを動かす
