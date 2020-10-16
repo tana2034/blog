@@ -10,7 +10,7 @@ weight: 1
 
 # [Rspec] 定数のスタブ
 
-RSpecでは定数をスタブすることができる
+RSpecでは定数をスタブすることができる.
 テストの時のみ、変更したい定数がある時など有効だと思う
 
 https://relishapp.com/rspec/rspec-mocks/docs/mutating-constants
