@@ -1,7 +1,6 @@
 ---
-title: "[Rails]n+1問題と解決方法"
+title: "[rails]N+1クエリ問題と解決方法"
 date: 2020-12-07T17:51:39+09:00
-draft: true
 ---
 
 # [Rails]N+1クエリ問題と解決方法
