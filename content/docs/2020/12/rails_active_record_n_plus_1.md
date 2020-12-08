@@ -7,9 +7,9 @@ date: 2020-12-07T17:51:39+09:00
 
 N+1クエリ問題について、よくわかっていなかったので調査してみました。
 
-## n+1問題とは
+## N+1クエリ問題とは
 
-> N+1 問題とは、Tree 状の情報を DB から読み出す際、全レコードの取得に一つ＋各レコード分だけ SQL を発行してしまう問題
+> N+1クエリ問題とは、Tree 状の情報を DB から読み出す際、全レコードの取得に一つ＋各レコード分だけ SQL を発行してしまう問題
 
 http://akasata.com/articles/103
 
@@ -22,7 +22,7 @@ Users.where(active: true).each do |user|
 end
 ```
 
-## railsでの対処方法(include, preload, eager_load)
+## railsでの対処方法(includes, preload, eager_load)
 
 この問題は、railsの公式ドキュメントでも触れられています。
 
@@ -33,7 +33,7 @@ https://moneyforward.com/engineers_blog/2019/04/02/activerecord-includes-preload
 
 ### includes
 
-公式ドキュメントでは、このN+1問題を解決するためにこのincludesを利用することを紹介しています。
+公式ドキュメントでは、このN+1クエリ問題を解決するためにこのincludesを利用することを紹介しています。
 
 `includesを指定すると、Active Recordは指定されたすべての関連付けが最小限のクエリ回数で読み込まれるようにしてくれます。`
 
