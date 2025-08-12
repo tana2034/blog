@@ -136,5 +136,5 @@ git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
 ## Deployment
 
 This blog is deployed on Netlify.
-- Production URL: https://tana2034-blog.netlify.com/
+- Production URL: https://tana2034-blog.netlify.app/
 - Auto-deploy on push to `main` branch
