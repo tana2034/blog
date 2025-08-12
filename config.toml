@@ -1,8 +1,72 @@
 baseURL = "https://tana2034-blog.netlify.com/"
 languageCode = "ja"
 title = "tana2034"
-theme = "book"
+theme = "PaperMod"
+
+# 検索機能のためのJSON出力を有効化
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+disablePathToLower = true
+enableGitInfo = true
+enableRobotsTXT = true
+
+# SEO optimization
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
 
 [params]
   author = "tana2034"
   description = "mainly about programming language Ruby, Go and more."
+  keywords = ["Ruby", "Go", "Programming", "Web Development", "Software Engineering"]
+  
+  # SEO settings
+  images = ["icon.jpg"]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  
+  # PaperMod settings
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  
+  # 検索機能
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+  
+  [params.homeInfoParams]
+    Title = "Welcome to tana2034's Blog"
+    Content = "Programming blog focusing on Ruby, Go, and other technologies."
+  
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/tana2034"
+    
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:2034tana@gmail.com"
+
+# メニュー設定
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 10

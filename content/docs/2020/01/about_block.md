@@ -1,9 +1,7 @@
 ---
 title: "[Ruby]ブロックについて学ぶ"
-weight: 1
-# bookFlatSection: false
-# bookToc: 6
-# bookHidden: false
+date: 2020-01-15T00:00:00+09:00
+draft: false
 ---
 
 # [Ruby]ブロックについて学ぶ
