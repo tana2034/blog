@@ -1,6 +1,5 @@
 ---
 title: "[Rspec] 定数のスタブ"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

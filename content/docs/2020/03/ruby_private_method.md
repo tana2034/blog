@@ -1,6 +1,5 @@
 ---
 title: "[Ruby]Rubyのprivateメソッド"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

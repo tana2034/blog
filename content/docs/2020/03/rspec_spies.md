@@ -1,6 +1,5 @@
 ---
 title: "[Rspec]Spyについて"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

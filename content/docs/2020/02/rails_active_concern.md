@@ -1,6 +1,5 @@
 ---
 title: "[rails]ActiveSupport::Concern"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

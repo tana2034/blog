@@ -1,6 +1,5 @@
 ---
 title: "[Ruby]Bundler周り調査"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

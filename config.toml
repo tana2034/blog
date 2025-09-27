@@ -27,12 +27,12 @@ enableRobotsTXT = true
   author = "tana2034"
   description = "mainly about programming language Ruby, Go and more."
   keywords = ["Ruby", "Go", "Programming", "Web Development", "Software Engineering"]
-  
+
   # SEO settings
   images = ["icon.jpg"]
   DateFormat = "January 2, 2006"
   defaultTheme = "auto"
-  
+
   # PaperMod settings
   ShowReadingTime = true
   ShowShareButtons = true
@@ -41,7 +41,7 @@ enableRobotsTXT = true
   ShowCodeCopyButtons = true
   ShowToc = true
   TocOpen = false
-  
+
   # 検索機能
   [params.fuseOpts]
     isCaseSensitive = false
@@ -51,7 +51,7 @@ enableRobotsTXT = true
     threshold = 0.4
     minMatchCharLength = 0
     keys = ["title", "permalink", "summary", "content"]
-  
+
   [params.homeInfoParams]
     Title = "Welcome to tana2034's Blog"
     Content = "Programming blog focusing on Ruby, Go, and other technologies."

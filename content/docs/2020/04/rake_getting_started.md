@@ -1,6 +1,5 @@
 ---
 title: "[rake]初めてのrake"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

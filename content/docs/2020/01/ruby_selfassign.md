@@ -1,6 +1,5 @@
 ---
 title: "[Ruby]自己代入"
-weight: 1
 # bookFlatSection: false
 # bookToc: 6
 # bookHidden: false

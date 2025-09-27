@@ -1,6 +1,5 @@
 ---
 title: "[ruby]Object#itself"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

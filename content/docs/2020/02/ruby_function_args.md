@@ -1,6 +1,5 @@
 ---
 title: "[Ruby]メソッドの引数"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

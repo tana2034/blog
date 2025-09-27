@@ -1,6 +1,5 @@
 ---
 title: "[RSpec]メモ"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

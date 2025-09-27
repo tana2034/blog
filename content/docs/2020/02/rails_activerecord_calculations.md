@@ -1,6 +1,5 @@
 ---
 title: "[rails]ActiveRecord::Calculations"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

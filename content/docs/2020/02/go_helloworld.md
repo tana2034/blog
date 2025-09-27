@@ -1,6 +1,5 @@
 ---
 title: "[Go]GoでHello world"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

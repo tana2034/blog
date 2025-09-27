@@ -1,6 +1,5 @@
 ---
 title: "[Go]Go言語を学ぶ（初級編）"
-weight: 1
 # bookFlatSection: false
 # bookToc: 6
 # bookHidden: false

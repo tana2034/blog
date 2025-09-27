@@ -1,6 +1,5 @@
 ---
 title: "[Rspec]Mocks Basics"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

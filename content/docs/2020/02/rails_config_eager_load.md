@@ -1,6 +1,5 @@
 ---
 title: "[rails]config.eager_load"
-weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
